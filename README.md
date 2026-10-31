@@ -40,17 +40,6 @@ outputs/stain_calibration/fold_perturbation_parameters.csv
 outputs/enhancement_targets/fold01_enhancement_target.json ... fold05...
 ```
 
-### Move fixed configuration and result artifacts from your original local project
-**Windows PowerShell**, from the repository folder:
-```powershell
-powershell -ExecutionPolicy Bypass -File .\tools\copy_local_assets.ps1 -SourceRoot 'E:\PUMA_Stain_Robustness'
-```
-This copies only selected small fixed inputs, final analysis CSVs, configs and final figures. It does not copy the original PUMA TIFFs, raw GeoJSON annotations, large pilot image grids, or model binaries. Confirm copied files with:
-```powershell
-python .\tools\check_release.py
-```
-The inventory originally uploaded **predates** scripts 20–24 and their `outputs/revision_stage20`–`23` folders; verify these later folders exist in the live project before claiming the full revision package is present.
-
 ### Environment
 Run these commands on the **original experiment machine** and use the **same environment** when possible. `requirements.txt` lists packages inferred from imports but is *not a pinned recreation of the original environment*.
 ```powershell
