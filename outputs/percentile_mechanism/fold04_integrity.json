@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "fold": 4,
+  "n_rois": 41,
+  "n_conditions": 6,
+  "n_roi_condition_pairs": 246,
+  "mean_clean_dice": 0.7947458412253587,
+  "mean_adaptive_dice": 0.790588746788014,
+  "mean_frozen_dice": 0.7209083399522912,
+  "mean_adaptive_dice_loss": 0.004157094437344577,
+  "mean_frozen_dice_loss": 0.07383750127306732,
+  "mean_adaptive_advantage_dice": 0.06968040683572273,
+  "mean_adaptive_feature_drift": 0.01537186162057896,
+  "mean_frozen_feature_drift": 0.06880235772606406,
+  "max_adaptive_dice_diff_from_stage12": 1.1102230246251563e-16,
+  "max_clean_dice_diff_from_stage11": 5.551115123125783e-17,
+  "feature_build_seconds_current_run": 177.50213429983705,
+  "rf_fit_seconds_current_run": 1202.5311981001869,
+  "wall_seconds_current_run": 7855.208818200044,
+  "caution": "Fold-1 results are a pilot, not independent validation. Frozen CLEAN validation-image percentiles are oracle counterfactuals, not deployable. Paired ROIs, not 246 independent biological cases. A Dice difference alone does not establish full causal mediation."
+}

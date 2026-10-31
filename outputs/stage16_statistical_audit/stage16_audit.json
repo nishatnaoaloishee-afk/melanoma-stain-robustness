@@ -1,0 +1,143 @@
+{
+  "status": "PASS",
+  "stage": 16,
+  "n_folds": 5,
+  "n_rois": 205,
+  "n_severe_conditions": 6,
+  "n_paired_rows": 1230,
+  "input_dir": "E:\\PUMA_Stain_Robustness\\outputs\\percentile_mechanism",
+  "source_sha256": {
+    "fold01_paired": {
+      "filename": "fold01_paired_mechanism.csv",
+      "sha256": "28ed7be8d56b750b81ac73c851d7a9df9dbe778a398672704ce9768602eb3a3d",
+      "bytes": 103666
+    },
+    "fold01_condition": {
+      "filename": "fold01_summary_by_condition.csv",
+      "sha256": "8f75041de93a33aafe8f22bb1bccdbf6b1a4fa46ec415f7becfe27e754d8ac5a",
+      "bytes": 1424
+    },
+    "fold01_integrity": {
+      "filename": "fold01_integrity.json",
+      "sha256": "6e786a157a7c671f0f4d2833825cf9f19a13d4e3751219c085809c776e4a57ea",
+      "bytes": 1075
+    },
+    "fold02_paired": {
+      "filename": "fold02_paired_mechanism.csv",
+      "sha256": "cfb127457c56eff2ba2d797bd74fdef21949a13d7d2b898244f6882b043dbd6f",
+      "bytes": 105512
+    },
+    "fold02_condition": {
+      "filename": "fold02_summary_by_condition.csv",
+      "sha256": "d8700bb6f0c3d475510a79aab28f539158c7103c2cef8caba787370b01c77210",
+      "bytes": 1422
+    },
+    "fold02_integrity": {
+      "filename": "fold02_integrity.json",
+      "sha256": "b2e52d1b63a1413ad8a98276fae934fad709ee4c9685a60bfed05a7a2cfd1ecf",
+      "bytes": 1073
+    },
+    "fold03_paired": {
+      "filename": "fold03_paired_mechanism.csv",
+      "sha256": "55a16451b4c0176e1159d4aa36ad0f36fba7ac79a4089788d56abe42d6e2f486",
+      "bytes": 105132
+    },
+    "fold03_condition": {
+      "filename": "fold03_summary_by_condition.csv",
+      "sha256": "41193fe0bf08ec85bec05bfa666fdd1a7db0ea1ec7785d6a0124cde0c20564dd",
+      "bytes": 1417
+    },
+    "fold03_integrity": {
+      "filename": "fold03_integrity.json",
+      "sha256": "d74eafc78ac64fe592156616257d01eaccddb723c5f5d4d910506eb5af46ce5c",
+      "bytes": 1053
+    },
+    "fold04_paired": {
+      "filename": "fold04_paired_mechanism.csv",
+      "sha256": "6824ae35e245af4eb008dd66651598aa5cf6e2f095b7cf73f2032096cf7f6ecd",
+      "bytes": 105424
+    },
+    "fold04_condition": {
+      "filename": "fold04_summary_by_condition.csv",
+      "sha256": "1ba56f50c5f48028c327995a804a6bd896e7398c5a17e808f6af5e081019c7a6",
+      "bytes": 1411
+    },
+    "fold04_integrity": {
+      "filename": "fold04_integrity.json",
+      "sha256": "c5df43d10953f90c18f2f9265eb150f38dcd3b667914f085ec5c40be8d21205a",
+      "bytes": 1071
+    },
+    "fold05_paired": {
+      "filename": "fold05_paired_mechanism.csv",
+      "sha256": "f4e129198d8c667365e9caba1dfbc44ae76fb4a05dfb3a78f64bf540e03899a4",
+      "bytes": 105627
+    },
+    "fold05_condition": {
+      "filename": "fold05_summary_by_condition.csv",
+      "sha256": "1c833d770cb9f33a5c9d9044964a157a637ac18172795c92bd68fd14d205d7c6",
+      "bytes": 1424
+    },
+    "fold05_integrity": {
+      "filename": "fold05_integrity.json",
+      "sha256": "2f48e4e9a4e38e869fdd4a0083643ac9372e033ab4192499aa1e3071b9dff918",
+      "bytes": 1074
+    }
+  },
+  "fold_checks": [
+    {
+      "fold": 1,
+      "status": "PASS",
+      "n_roi_condition": 246,
+      "max_stage12_error": 1.1102230246251563e-16,
+      "max_stage11_error": 1.1102230246251563e-16
+    },
+    {
+      "fold": 2,
+      "status": "PASS",
+      "n_roi_condition": 246,
+      "max_stage12_error": 1.1102230246251563e-16,
+      "max_stage11_error": 5.551115123125783e-17
+    },
+    {
+      "fold": 3,
+      "status": "PASS",
+      "n_roi_condition": 246,
+      "max_stage12_error": 1.1102230246251563e-16,
+      "max_stage11_error": 0.0
+    },
+    {
+      "fold": 4,
+      "status": "PASS",
+      "n_roi_condition": 246,
+      "max_stage12_error": 1.1102230246251563e-16,
+      "max_stage11_error": 5.551115123125783e-17
+    },
+    {
+      "fold": 5,
+      "status": "PASS",
+      "n_roi_condition": 246,
+      "max_stage12_error": 1.1102230246251563e-16,
+      "max_stage11_error": 1.1102230246251563e-16
+    }
+  ],
+  "maximum_adaptive_stage12_abs_error": 1.1102230246251563e-16,
+  "maximum_clean_stage11_abs_error": 1.1102230246251563e-16,
+  "bootstrap": {
+    "method": "stratified ROI resampling within CV fold",
+    "replicates": 10000,
+    "seed": 13016,
+    "confidence_level": 0.95
+  },
+  "roi_independence_unverified": true,
+  "patient_or_slide_id_available": false,
+  "counterfactual_is_oracle_clean_validation_percentiles": true,
+  "caveats": [
+    "ROI bootstrap/p-values exploratory without slide/patient clustering metadata",
+    "Frozen clean-image percentiles are an oracle counterfactual, not a deployable comparator",
+    "Same RF was trained with adaptive normalization; no claim of full causal mediation",
+    "Synthetic stain changes on one dataset; not external generalization"
+  ],
+  "python_version": "3.11.1",
+  "numpy_version": "2.4.6",
+  "pandas_version": "3.0.6"
+}

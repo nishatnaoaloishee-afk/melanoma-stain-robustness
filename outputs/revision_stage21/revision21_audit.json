@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "rows": 11070,
+  "unique_rois": 205,
+  "conditions": 6,
+  "channels": 9,
+  "no_rf_training": true,
+  "feature_drift_exact_replication": "Each ROI-condition channel mean reproduces Stage15 average MAE within 3e-7",
+  "nuclei_density_unit": "annotations per 10^6 tissue pixels at 20x; not per mm^2 without verified pixel size"
+}

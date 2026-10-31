@@ -1,0 +1,6 @@
+fold,roi,slide_type,clean_dice,mean_adaptive_dice,mean_frozen_dice,mean_adaptive_advantage,conditions_adaptive_wins
+4,training_set_primary_roi_089,primary,0.4419219734,0.4436066607,0.4838899876,-0.04028332692,3
+4,training_set_metastatic_roi_003,metastatic,0.6550140101,0.670594724,0.6781785346,-0.007583810636,3
+2,training_set_metastatic_roi_086,metastatic,0.4922749348,0.5199165179,0.5262970846,-0.006380566697,3
+1,training_set_metastatic_roi_087,metastatic,0.6862552662,0.7067583311,0.7091541131,-0.002395782023,3
+5,training_set_metastatic_roi_040,metastatic,0.6697805176,0.6849446331,0.6853342792,-0.0003896461744,3

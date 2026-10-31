@@ -1,0 +1,4 @@
+method,n_rois,mean_extra_dice_loss_vs_no_correction,ci_low_exploratory,ci_high_exploratory,roi_more_loss,roi_less_loss
+clahe,205,0.001206280096,0.0001842174374,0.002213155315,133,72
+macenko,205,0.002386024174,-0.0005075421023,0.0053267755,114,91
+reinhard,205,0.006123487306,0.003990119171,0.008281627957,152,53

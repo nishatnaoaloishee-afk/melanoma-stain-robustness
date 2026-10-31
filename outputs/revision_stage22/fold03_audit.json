@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "fold": 3,
+  "n_rois": 41,
+  "n_conditions": 3,
+  "thresholds": [
+    0.3,
+    0.35,
+    0.4,
+    0.45,
+    0.5
+  ],
+  "rows": 615,
+  "zero_point_four_reproduction": "Both branches checked against Stage15 for all selected ROI-condition pairs, tolerance <=1e-6",
+  "clean_reproduction": "Clean Dice checked against Stage11",
+  "model_training": "Exact Stage15 500-tree clean RF reconstituted",
+  "training_seconds": 1210.5041887001134,
+  "wall_seconds": 5217.31889809994,
+  "probability_auc": "Pixel-level AUC on tissue pixels, exploratory; segmentation Dice includes postprocessing"
+}

@@ -1,0 +1,56 @@
+{
+  "status": "PASS",
+  "original_sources_treated_as_read_only": true,
+  "source_file_sha256": {
+    "stage12_source": {
+      "relative_path": "src\\12_stain_robustness_rf_experiment.py",
+      "sha256": "8dff3dc4c1550183c23b79f9507798bb352baacda92ffbb5129a41f71355e322"
+    },
+    "stage14_source": {
+      "relative_path": "src\\14_feature_invariance_pilot.py",
+      "sha256": "56e1c53afb240573ffd857df4bb635e241c8672439f0f06a394df016cf8d8106"
+    },
+    "stage15_source": {
+      "relative_path": "src\\15_percentile_mechanism_rf.py",
+      "sha256": "80ef44e64bf0c2f386af8249eedfbf7aed582eeb59c67145959a3fae946bbd8c"
+    },
+    "cv_splits": {
+      "relative_path": "inputs\\splits\\cv_splits_seed13_folds5.npz",
+      "sha256": "62ed9426c18b75cc1a5a20b8aa4a8c6bf68e095b237f7fd856c4c0af272ff0a1"
+    },
+    "fold_stain_parameters": {
+      "relative_path": "outputs\\stain_calibration\\fold_perturbation_parameters.csv",
+      "sha256": "2134ef4df4215ae1117603075599448f7ba5a0a4e8c940ebe762226a1b080f8e"
+    },
+    "paired_stage16": {
+      "relative_path": "outputs\\stage16_statistical_audit\\stage16_combined_paired_rows.csv",
+      "sha256": "9dbf8c950b95924ad0fc29ba36d0c49e7da060543257589ef2bc3c0667434f8b"
+    }
+  },
+  "n_original_roi_images": 206,
+  "n_retained_rois": 205,
+  "excluded_roi_names_from_saved_cv_splits": [
+    "training_set_metastatic_roi_103"
+  ],
+  "excluded_roi_reason": "NOT INFERRED. Verify against authoritative PUMA release notes before asserting reason.",
+  "patient_slide_mapping": "NOT VERIFIED. ROI folds alone do not establish slide/patient independence.",
+  "threshold_conditions": [
+    "H_high_severe",
+    "E_low_severe",
+    "HE_high_severe"
+  ],
+  "thresholds": [
+    0.3,
+    0.35,
+    0.4,
+    0.45,
+    0.5
+  ],
+  "threshold_baseline_reproduces_saved_stage16": "PASS within 1e-6 for all 615 ROI-condition comparisons, both branches",
+  "n_threshold_rows": 3075,
+  "n_channel_feature_rows": 11070,
+  "mean_advantage_threshold_0_40_subset": 0.08648295401026415,
+  "bootstrap_unit": "ROI; 3 conditions retained together; 41 ROIs resampled within each fixed fold",
+  "confidence_intervals_are_exploratory": true,
+  "note": "Threshold-sensitivity is a deliberately selected three-condition subset, not a replacement for the six-condition main result."
+}

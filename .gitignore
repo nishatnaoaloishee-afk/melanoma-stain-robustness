@@ -1,0 +1,29 @@
+# Never accidentally publish complete pathology data or local environment
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.idea/
+.vscode/
+.git/
+01_training_dataset_tif_ROIs/
+01_training_dataset_geojson_nuclei/
+01_training_dataset_geojson_tissue/
+reference_qupath.png
+# Original uncompressed common-pixel table is ~62 MB; compact NPZ is provided separately
+inputs/training_samples/common_training_pixels_seed13.csv
+# Avoid models and large unselected experiment images and local logs
+*.joblib
+*.pkl
+*.pickle
+outputs/**/grids/
+outputs/**/overlays/
+outputs/**/representative_images/
+outputs/revision_run_logs/
+*.log
+.DS_Store
+# Do not publish arbitrary spreadsheets or source documents from the working tree
+*.pdf
+*.tif
+*.tiff

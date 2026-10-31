@@ -1,0 +1,10 @@
+analysis,unit,n,spearman_rho,nominal_p_exploratory,note
+ROI mean: reduction in feature MAE vs adaptive Dice advantage,ROI means,205,-0.001909710130796339,0.9783195829523409,Association does NOT prove causal mediation; p assumes independent units.
+ROI mean: adaptive feature MAE vs adaptive Dice loss,ROI means,205,0.06332130768480729,0.3670648584768701,Association does NOT prove causal mediation; p assumes independent units.
+ROI mean: frozen feature MAE vs frozen Dice loss,ROI means,205,-0.07349807078881752,0.2949544655989004,Association does NOT prove causal mediation; p assumes independent units.
+H_low_severe: drift reduction vs Dice advantage,"ROI, single condition",205,0.1471730439748715,0.03522235942108697,Association does NOT prove causal mediation; p assumes independent units.
+H_high_severe: drift reduction vs Dice advantage,"ROI, single condition",205,0.231432909417615,0.0008414160309482516,Association does NOT prove causal mediation; p assumes independent units.
+E_low_severe: drift reduction vs Dice advantage,"ROI, single condition",205,-0.1192252510760402,0.08862680757902838,Association does NOT prove causal mediation; p assumes independent units.
+E_high_severe: drift reduction vs Dice advantage,"ROI, single condition",205,0.2518351882547952,0.0002699325343728231,Association does NOT prove causal mediation; p assumes independent units.
+HE_low_severe: drift reduction vs Dice advantage,"ROI, single condition",205,-0.05014695435360978,0.4751936751182932,Association does NOT prove causal mediation; p assumes independent units.
+HE_high_severe: drift reduction vs Dice advantage,"ROI, single condition",205,0.5866849605103704,2.385909076852168e-20,Association does NOT prove causal mediation; p assumes independent units.

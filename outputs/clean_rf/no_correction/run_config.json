@@ -1,0 +1,26 @@
+{
+  "method": "no_correction",
+  "method_display": "No correction",
+  "cohort_size": 205,
+  "folds": 5,
+  "common_samples_per_roi": 6000,
+  "positive_samples_per_roi": 3000,
+  "negative_samples_per_roi": 3000,
+  "random_seed": 13,
+  "n_estimators": 500,
+  "max_depth": null,
+  "min_samples_leaf": 1,
+  "class_weight": "balanced",
+  "probability_threshold": 0.4,
+  "predict_chunk": 250000,
+  "min_area": 5,
+  "max_area": 1200,
+  "min_peak_distance": 2,
+  "distance_sigma": 1.0,
+  "model_files_saved": false,
+  "clahe_clip_limit": 0.5,
+  "clahe_tile_grid": [
+    8,
+    8
+  ]
+}

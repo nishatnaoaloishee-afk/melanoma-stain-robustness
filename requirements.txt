@@ -1,0 +1,10 @@
+# Dependency names from source imports. NOT the original locked versions.
+numpy
+pandas
+scipy
+scikit-image
+scikit-learn
+matplotlib
+Pillow
+opencv-python
+joblib

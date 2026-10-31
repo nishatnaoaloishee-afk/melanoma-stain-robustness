@@ -1,0 +1,142 @@
+{
+  "stage": "17",
+  "status": "PASS",
+  "n_folds": 5,
+  "n_rois": 205,
+  "n_roi_condition_rows": 1230,
+  "mean_adaptive_dice": 0.7956275589104626,
+  "mean_frozen_dice": 0.7226574539391315,
+  "mean_adaptive_advantage_dice": 0.0729701049713311,
+  "fold_stratified_roi_bootstrap_95ci": [
+    0.06798326786069145,
+    0.07786327622142007
+  ],
+  "mean_feature_mae_adaptive": 0.015163108663504694,
+  "mean_feature_mae_frozen": 0.06804056751325994,
+  "roi_adaptive_wins": 200,
+  "roi_negative_mean_advantage": [
+    "training_set_primary_roi_089",
+    "training_set_metastatic_roi_003",
+    "training_set_metastatic_roi_086",
+    "training_set_metastatic_roi_087",
+    "training_set_metastatic_roi_040"
+  ],
+  "stage12_benchmark": {
+    "status": "PASS",
+    "n_rows": 9840,
+    "means": [
+      {
+        "method": "no_correction",
+        "n": 2460,
+        "clean_dice": 0.7994473872119788,
+        "perturbed_dice": 0.7975637184420908,
+        "dice_loss": 0.0018836687698880379,
+        "method_name": "No correction"
+      },
+      {
+        "method": "clahe",
+        "n": 2460,
+        "clean_dice": 0.7994323325145408,
+        "perturbed_dice": 0.7963423836481812,
+        "dice_loss": 0.003089948866359588,
+        "method_name": "CLAHE"
+      },
+      {
+        "method": "macenko",
+        "n": 2460,
+        "clean_dice": 0.7847511153241385,
+        "perturbed_dice": 0.7804814223798112,
+        "dice_loss": 0.0042696929443273,
+        "method_name": "Macenko"
+      },
+      {
+        "method": "reinhard",
+        "n": 2460,
+        "clean_dice": 0.7809783615792552,
+        "perturbed_dice": 0.7729712055033293,
+        "dice_loss": 0.008007156075925911,
+        "method_name": "Reinhard"
+      }
+    ],
+    "paired_differences": [
+      {
+        "method": "clahe",
+        "n_rois": 205,
+        "mean_extra_dice_loss_vs_no_correction": 0.00120628009647155,
+        "ci_low_exploratory": 0.0001842174374114916,
+        "ci_high_exploratory": 0.0022131553154784065,
+        "roi_more_loss": 133,
+        "roi_less_loss": 72
+      },
+      {
+        "method": "macenko",
+        "n_rois": 205,
+        "mean_extra_dice_loss_vs_no_correction": 0.002386024174439261,
+        "ci_low_exploratory": -0.000507542102269021,
+        "ci_high_exploratory": 0.005326775500269036,
+        "roi_more_loss": 114,
+        "roi_less_loss": 91
+      },
+      {
+        "method": "reinhard",
+        "n_rois": 205,
+        "mean_extra_dice_loss_vs_no_correction": 0.0061234873060378725,
+        "ci_low_exploratory": 0.003990119170505804,
+        "ci_high_exploratory": 0.008281627956656006,
+        "roi_more_loss": 152,
+        "roi_less_loss": 53
+      }
+    ],
+    "source_file_sha256": {
+      "E:\\PUMA_Stain_Robustness\\outputs\\stain_robustness\\no_correction\\folds\\fold01_robustness_metrics.csv": "8071abc2404d69b83f45f785515d1631c4f9c2d2064acd2fad3962e73b06d8ca",
+      "E:\\PUMA_Stain_Robustness\\outputs\\stain_robustness\\no_correction\\folds\\fold02_robustness_metrics.csv": "52f58c7ef60dc5d2d3bc928816be58877a83f6909d6647d5125165c657a127a8",
+      "E:\\PUMA_Stain_Robustness\\outputs\\stain_robustness\\no_correction\\folds\\fold03_robustness_metrics.csv": "f8a5372d228228b362b3658eb0ac03e4277bf14b7fecf324deea3fa73fb15b39",
+      "E:\\PUMA_Stain_Robustness\\outputs\\stain_robustness\\no_correction\\folds\\fold04_robustness_metrics.csv": "1f19cce9863ee8f083db228b79f77b992fd090b3bad4df0490112eeff316a716",
+      "E:\\PUMA_Stain_Robustness\\outputs\\stain_robustness\\no_correction\\folds\\fold05_robustness_metrics.csv": "175a4cc2d2a1b09e8f3f4d06762f09962b231dcff0f8c39a39e028301a0550a0",
+      "E:\\PUMA_Stain_Robustness\\outputs\\stain_robustness\\clahe\\folds\\fold01_robustness_metrics.csv": "b3fdfcb02234a15212a8bb34c69e52fa73ec04b78845316231a5646b09ab58b9",
+      "E:\\PUMA_Stain_Robustness\\outputs\\stain_robustness\\clahe\\folds\\fold02_robustness_metrics.csv": "718d8ffe84f246fd7f1cdb6f65ac7d4f8d9ca695c8a76c79b71851e9fd0044d9",
+      "E:\\PUMA_Stain_Robustness\\outputs\\stain_robustness\\clahe\\folds\\fold03_robustness_metrics.csv": "459511803d1da62520bd4df369910f71aa6203db07fc137f13a233cd6c5944d9",
+      "E:\\PUMA_Stain_Robustness\\outputs\\stain_robustness\\clahe\\folds\\fold04_robustness_metrics.csv": "1efca54a99057704689999f080845060f5029cbad11bc7e5eaba83e09bc9741b",
+      "E:\\PUMA_Stain_Robustness\\outputs\\stain_robustness\\clahe\\folds\\fold05_robustness_metrics.csv": "58dda0fb757cf2ccfb12a351d90027d3660b3b255837f9d96c706d78695add37",
+      "E:\\PUMA_Stain_Robustness\\outputs\\stain_robustness\\macenko\\folds\\fold01_robustness_metrics.csv": "efde8a844c95f1e0f0c8fdbb7936cbd3c393bf19caa644dea5d89d121394c308",
+      "E:\\PUMA_Stain_Robustness\\outputs\\stain_robustness\\macenko\\folds\\fold02_robustness_metrics.csv": "c7eb622c56c4a3b88bced13098f12d4c2231b36993a729d9f6d5e02d3c59beca",
+      "E:\\PUMA_Stain_Robustness\\outputs\\stain_robustness\\macenko\\folds\\fold03_robustness_metrics.csv": "77c22cd2e43a9ef2524c4ad71dc800e51e6a811ff20546c944e83aa39cc6b63d",
+      "E:\\PUMA_Stain_Robustness\\outputs\\stain_robustness\\macenko\\folds\\fold04_robustness_metrics.csv": "71b5a6089cfc545d550aa90aeba8eb97101bb21d36435862680b8ed86165500b",
+      "E:\\PUMA_Stain_Robustness\\outputs\\stain_robustness\\macenko\\folds\\fold05_robustness_metrics.csv": "424e7569916dc38e10971281c2c3333e1b429337441b2fbfb65bd68009acaad0",
+      "E:\\PUMA_Stain_Robustness\\outputs\\stain_robustness\\reinhard\\folds\\fold01_robustness_metrics.csv": "e4f3e41f78172586de07eb2e6bae2355aefb188e7ea27184958b1ae7fc5afe18",
+      "E:\\PUMA_Stain_Robustness\\outputs\\stain_robustness\\reinhard\\folds\\fold02_robustness_metrics.csv": "462670ade26bae97e851e5552e024b8d887e366495fd3064df970fcfc4c9af10",
+      "E:\\PUMA_Stain_Robustness\\outputs\\stain_robustness\\reinhard\\folds\\fold03_robustness_metrics.csv": "aabc834d0d00345cb7eae13f6ee0bff4c4461ffb2f47ef1e0e3340d5b3bc918e",
+      "E:\\PUMA_Stain_Robustness\\outputs\\stain_robustness\\reinhard\\folds\\fold04_robustness_metrics.csv": "70b9e96cbe6893a2a8beacb66a9e366245a867db296cb0f46d306dbecdf8ef12",
+      "E:\\PUMA_Stain_Robustness\\outputs\\stain_robustness\\reinhard\\folds\\fold05_robustness_metrics.csv": "d59a69f808e4da92fdc32a71019ce59d6a8743bd83f7620869a80a947e835dce"
+    }
+  },
+  "figures": [
+    "fig17_01_condition_effects.png",
+    "fig17_02_paired_roi_scatter.png",
+    "fig17_03_fold_consistency.png",
+    "fig17_04_feature_drift.png",
+    "fig17_05_drift_vs_dice.png",
+    "fig17_06_exceptions.png",
+    "fig17_07_precision_recall.png",
+    "fig17_08_four_method_benchmark.png"
+  ],
+  "input_csv_sha256": {
+    "combined_paired_rows": "9dbf8c950b95924ad0fc29ba36d0c49e7da060543257589ef2bc3c0667434f8b",
+    "roi_level": "a94e18656673dc4690407a2ab4766f4c7e36c10f277aa4708219d58ac5156e0c",
+    "by_fold": "dd9f2d3b3422ef50081d70fe1f5e90da0e0b4c9856dff64d452dbeff11d36108",
+    "by_condition": "af30cc2220ec67e3df1895bf6e9a664da776d4414e21728f2daf0788972ec290",
+    "overall": "359164eacb5099de84114930b45c675d5aaf24786a52cee0cd1d8e477807cafb",
+    "by_slide_type": "322f5e5703f03e28cc37a368a8c781016f7402273ff62a2c7020b3b5dd57345d",
+    "feature_dice_associations": "09e09a00c79542e03eab0428cc0e5209a44c3f5684a0c7f43478666a436038a4"
+  },
+  "limitations": [
+    "No independent external cohort or clinical scanner shift",
+    "Frozen-clean percentile reference is oracle counterfactual and not deployment benchmark",
+    "Model was trained on adaptively normalized features; train-test feature-distribution mismatch contributes to counterfactual performance",
+    "Unknown whether one case always identifies a unique patient within selected 205; external PUMA paper supports one ROI per slide/case but should be verified",
+    "ROI confidence intervals exploratory until dependence verified",
+    "Subgroup comparisons descriptive, not external population effects",
+    "Negative mechanistic ROI-level correlation argues against simplistic drift-MAE mediation"
+  ],
+  "case_verification": "PUMA published methodology states one annotated ROI selected from each slide and 310 cases total; verify local ROI release and uniqueness of patients separately."
+}
